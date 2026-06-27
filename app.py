@@ -10,38 +10,37 @@ st.set_page_config(
 
 
 st.markdown("""
-st.markdown("""
 <style>
 
 /* Main Background */
 .stApp {
-    background: linear-gradient(135deg, #F5EFE6, #E8DCCB);
+    background: linear-gradient(135deg, #F5F5DC, #E8DCC4);
 }
 
 /* Sidebar */
 section[data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #55624A, #6F7D5C);
+    background: linear-gradient(180deg, #DCC7AA, #CBB89D);
 }
 
 section[data-testid="stSidebar"] * {
-    color: white !important;
+    color: #4E3D2A !important;
 }
 
 /* Upload Box */
 [data-testid="stFileUploader"] {
-    background: #F5EFE6;
-    border: 2px dashed #6F7D5C;
+    background: #F8F1E7;
+    border: 2px dashed #8B7355;
     border-radius: 15px;
     padding: 15px;
 }
 
-/* KPI Cards */
+/* Metric Cards */
 div[data-testid="metric-container"] {
-    background: linear-gradient(135deg, #6F7D5C, #84916F);
+    background: linear-gradient(135deg, #DCC7AA, #CBB89D);
     border-radius: 15px;
     padding: 15px;
-    color: white;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.15);
+    color: #4E3D2A;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
 }
 
 /* Headers */
@@ -50,20 +49,26 @@ h1 {
 }
 
 h2, h3 {
-    color: #55624A !important;
+    color: #8B7355 !important;
 }
 
 /* Buttons */
 .stButton > button {
-    background: linear-gradient(90deg, #6F7D5C, #84916F);
-    color: white;
+    background: linear-gradient(90deg, #CBB89D, #DCC7AA);
+    color: #4E3D2A;
     border: none;
     border-radius: 10px;
     font-weight: bold;
 }
 
 .stButton > button:hover {
-    background: linear-gradient(90deg, #55624A, #6F7D5C);
+    background: linear-gradient(90deg, #BFA88A, #D6C2A8);
+}
+
+/* Selectbox */
+.stSelectbox div[data-baseweb="select"] {
+    background-color: white;
+    border-radius: 10px;
 }
 
 /* DataFrame */
@@ -74,12 +79,12 @@ h2, h3 {
 
 /* Text */
 p, li, label {
-    color: #4A4A4A !important;
+    color: #5C4B37 !important;
 }
 
 /* Divider */
 hr {
-    border-color: #CFC2AF;
+    border-color: #CBB89D;
 }
 
 </style>
@@ -87,18 +92,17 @@ hr {
 
 
 st.markdown("""
-st.markdown("""
 <div style='
 padding:30px;
 border-radius:20px;
-background:linear-gradient(90deg,#55624A,#6F7D5C,#E8DCCB);
+background:linear-gradient(90deg,#CBB89D,#DCC7AA,#F5F5DC);
 text-align:center;
-color:white;
+color:#4E3D2A;
 box-shadow:0px 6px 20px rgba(0,0,0,0.15);'>
 
-<h1>📊 Unemployment Analysis Dashboard</h1>
+<h1 style="color:#4E3D2A;">📊 Unemployment Analysis Dashboard</h1>
 
-<p style='font-size:18px;color:white;'>
+<p style='font-size:18px;color:#5C4B37;'>
 Analyze unemployment trends, investigate COVID-19 impact,
 identify seasonal patterns, and generate policy insights.
 </p>
